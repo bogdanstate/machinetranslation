@@ -1,0 +1,426 @@
+absolut	absolute	jj
+absolut	certainly#absolutely#definitely	ab
+adekvata	adequate	jj
+affärsstrukturerna	commercial structures	nn
+alla	all	pn
+alla	everyone#all#everybody
+allmänt	common#general#public#vague	jj
+allmänt	generally
+andra	another#other	pn
+andra	other
+andra	present#advance#set forth#put forward	vb
+andra	second	rg
+anges	specified	jj
+anser	consider#regard	vb
+ansvar	responsibility#liability	nn
+antagna	adopted
+antal	quantity#number	nn
+användarna	users	nn
+använder	employ#use#carry#utilize#wear	vb
+användningen	usage#employment#use	nn
+arbetsstyrkan	labour (work) force	nn
+att	that	kn
+att	to	ie
+av	at#by#of	pp
+av	off#down	ab
+avancera	advance	vb
+avgörande	conclusion#settlement#decision	nn
+avgörande	decisive#conclusive	jj
+avtal	agreement#contract	nn
+balans	balance	nn
+bara	if	kn
+bara	merely#only#just	ab
+bara	naked#bare	jj
+befolkningen	people#population#the inhabitants	nn
+begränsning	bounds#restriction#scope#limitation	nn
+behöver	have to#need to	vb
+behöver	want#need#require	vb
+berättigade	authorize#entitle	vb
+berättigade	authorized#entitled	jj
+berättigade	justified#legitimate	jj
+beslutsamt	decisively
+beslutsamt	determined#resolute	jj
+betalningsförfaranden	payment procedures
+blev	become#get#be#was#got#became	vb
+bredband	broadband
+bättre	good#excellent#fine#better	jj
+bättre	excellently#well	ab
+bör	ought to#should	vb
+chans	chance	nn
+data	computer#data	nn
+dataskydd	data protection	nn
+datorernas	computers	nn
+de	it#he#she#that	pn
+de	the#that	article
+dem	them
+den	it#he#she	pn
+den	portable computer#laptop	nn
+den	that	pn
+den	the#that	article
+denna	this	pn
+dessa	these
+dessa	this	pn
+det	it#he#she	pn
+det	that	pn
+det	the#that	article
+detta	this	pn
+dialog	(dialog [US])#dialogue	nn
+direktiv	directive#instruction	nn
+direktivet	directive#instruction	nn
+diskuterade	discuss#debate#argue	vb
+distansavtal	distance contracts	nn
+distansförsäljning	distance sales	nn
+dynamiska	dynamic	jj
+däribland	including
+därtill	to that#besides	ab
+efter	after	kn
+efter	after#later	pp
+efter	after#next#following	ab
+efter	for	pp
+eftersom	as#because#seeing that#since	kn
+egna	odd#peculiar#strange#queer	jj
+egna	own
+egna	own	jj
+e-handel	E-Commerce	nn
+e-handeln	E-Commerce	nn
+e-handelns	E-Commerce	nn
+e-handelsdirektivet	E-Commerce Directive	nn
+e-handelsmarknad	E-Commerce Market	nn
+e-handelsmöjligheterna E-Commerce Opportunities	nn
+einitiativet	e-initiative
+ekonomin	economy	nn
+elektronisk	electronic	jj
+elektroniska	electronic	jj
+en	a#an	article
+en	about	ab
+en	action	nn
+en	juniper	nn
+en	one	pn
+en	one	rg
+enligt	according to	pp
+erkännande	acknowledgement#recognition#admission#confession	nn
+ett	a#an	article
+ett	one	rg
+eu	EU	pm
+europa	europe	pm
+europeiska	European	jj
+exempelvis	for example	ab
+finnas	am#is#are	vb
+form	form	nn
+form	form#mould#shape	nn
+fortbildningsprogram	training programs	nn
+fortsätter	continue#go on#keep on#carry on	vb
+framsteg	progress	nn
+framtiden	future	nn
+fru	wife#Mrs.	nn
+främja	forward#further#promote	vb
+främst	in front#first#foremost#primary	jj
+främst	mainly#foremost	ab
+fråga	ask	vb
+fråga	question#matter	nn
+frågan	question#matter	nn
+från	from	pp
+fungera	act#serve as#function#work	vb
+få	few	pn
+få	have#may	vb
+få	receive#get	vb
+för	because	kn
+för	by#for#of#to	pp
+för	in front of#too	ab
+för	lead#conduct#transport	vb
+förbättra	improve	vb
+fördelar	benefit#advantage	nn
+fördelar	divide	vb
+förenkla	simplify	vb
+företag	business#enterprise#undertaking#company	nn
+företag	perform#carry out#undertake	vb
+förnuftig	reasonable#sensible	jj
+förra	former	jj
+förstärka	reinforce#strengthen	vb
+försvaras	defended
+försäkringar	assurance	nn
+försäkringar	insurance	nn
+förtroende	faith#confidence#trust	nn
+förvisso	assuredly#certainly	ab
+garantera	guarantee	vb
+garantier	warranty#guarantee	nn
+ge	give	vb
+gemenskapsrätten	community law	nn
+genom	through	pp
+genomförandebestämmelser	implementing
+gjorts	made
+gladde	delight#please#give pleasure	vb
+gladde	gave (sby) pleasure
+granskning	scrutiny#survey
+gruppera	group	vb
+gränsöverskridande	crossborder
+gäller	be valid#be in effect	vb
+gäller	pertain to#apply#concern	vb
+göra	cause#make	vb
+göra	do	vb
+göra	make	vb
+ha	have#possess#be provided with	vb
+halkat	slip	vb
+handel	commerce#trade#business#shop	nn
+handeln	commerce#trade#business#shop	nn
+handelssystem	trading	nn
+har	have#possess#be provided with	vb
+hindrar	prevent#hinder#check#restrain	vb
+huvud	head	nn
+huvuddokumentet	main document	nn
+handlingsplanen	Action Plan	nn
+harmonisera	harmonise	vb
+hänsyn	consideration#respect	nn
+här	army#host	nn
+här	here	ab
+hörande	domiciled	jj
+i	as#at#in#for#on#of#to	pp
+i	at#on	ab
+ihop	together	ab
+immateriella	immaterial
+införa	introduce	vb
+innehålla	contain#withhold	vb
+inom	in#within	pp
+inom	within	pp
+inre	inner#interior#internal	jj
+inre	inside	nn
+inrätta	establish#found#start#set up	vb
+intar	occupy#take	vb
+intar	partake of#eat	vb
+inte	not	ab
+internetbaserade	internet-based
+internetföretag	internet companies
+internetleverantörernas	Internet Service Providers
+intressen	interest	nn
+intresserade	interest	vb
+intresserade	interested	jj
+jag	I	pn
+jag	ego	nn
+kan	can	vb
+kan	can#know	vb
+komma	arouse#prompt#arrive#come#come from	vb
+komma	comma	nn
+komma	will#be going to	vb
+kommer	arouse#prompt#arrive#come#come from#will#be going to	vb
+kommissionen	commission	nn
+konsument	consumer	nn
+konsumentavtal	consumer contracts	nn
+konsumenterna	consumer	nn
+konsumenternas	consumer	nn
+konsumentlagstiftningen	consumer legislation	nn
+konsumentskydd	consumer protection	nn
+konsumentskyddsdirektiv	consumer protection directives	nn
+kontakter	contact#socket#[electrical] outlet	nn
+kulturföremål	artifacts#cultural
+kunna	can#know	vb
+kvalifikationerna	qualifications	nn
+lagliga	legal	jj
+ledamot	member	nn
+liksom	like#as	kn
+liksom	so to speak#as it were	ab
+lista	list	nn
+lägger	place#put	vb
+lägger	set#lay
+man	husband#man#mane#person	nn
+man	one	pn
+marknaden	market	nn
+med	for#about	pp
+med	runner	nn
+med	too#with	ab
+med	with	pp
+medlemsstater	member	nn
+mellan	between	pp
+mer	more	jj
+mer	more#additional	ab
+mig	me#myself	pn
+mina	mine	nn
+mina	my	pn
+måste	must	nn
+måste	must	vb
+möjlig	possible	jj
+möjlighet	possibility	nn
+möjligheten	possibility	nn
+möjligheter	possibility	nn
+ni	you	pn
+noga	careful	jj
+noga	exactly#carefully	ab
+nya	new	jj
+när	near	ab
+när	nourish	vb
+när	when	ab
+när	when	kn
+nätbutiker	online stores	nn
+nätet	net	nn
+nödvändig	necessary	jj
+nödvändigheten	necessity	nn
+nu	now	ab
+och	and	kn
+också	too#also	ab
+om	about#again#re-#round	ab
+om	by#of#about#round	pp
+om	if	kn
+onlinelagring	online storage nn
+oss	us	pn
+oss	we	pn
+plats	place	nn
+plats	position#job	nn
+plats	room	nn
+privatkopieringen	private copying	nn
+procent	per cent	nn
+produkter	product	nn
+på	after	pp
+på	at etc.	ab
+på	in#during	pp
+på	of#at	pp
+på	on	pp
+påverka	influence#affect	vb
+regel	bolt#custom#ule	nn
+rent	absolutely#completely#quite	ab
+rent	clean#pure	jj
+registrering	registration	nn
+regler	custom	nn
+regler	rule	nn
+resebranschen	travel industry	nn
+roll	&quot;matter&quot;	nn
+roll	rôle	nn
+roll	rôle#part	nn
+rättighet	right	nn
+rättigheter	right	nn
+rättmätiga	rightful#lawful	jj
+sade	said#say	vb
+sammanträdesperioden	session	nn
+samstämmig	unanimous#in accord	jj
+samverkar	collaborate#cooperate#work together	vb
+satsa	stake#back#venture#bet on	vb
+se	notice#watch#see#look#view#perceive	vb
+senaste	last
+sin	his#one#her#its#theirs	pn
+sina	his#one#her#its#theirs	pn
+sina	run short#become (run) dry#dry up	vb
+ska	have to#shall#must	vb
+ska	shall#will	vb
+skall	barking#bark	nn
+skall	will#shall#must#have to
+skapa	cause#engender#produce#give rise to#make#create	vb
+skatteinstrumenten	tax instruments	nn
+skydd	defence#security#shelter#protection	nn
+skydda	preserve#protect#cover#secure#shelter#defend	vb
+skyddet	defence#security#shelter#protection	nn
+skyddsåtgärder	protective
+slutits	concluded
+snabbare	faster
+som	as	kn
+som	who#whom	pn
+speciella	special	jj
+speciellt	special	jj
+spela	play	vb
+standardisera	standardize	vb
+stimulera	stimulate	vb
+stärka	starch#strengthen	vb
+stora	large#big#great	jj
+stort	large#big#great	jj
+strasbourg	strasbourg
+strategi	strategy	nn
+stöder	support#steady	vb
+stödja	supporting	vb
+störa	interrupt	vb
+system	system	nn
+systemet	system	nn
+säkerheten	certainty#safety#security	nn
+säkerställa	guarantee#secure	vb
+säkras	secured
+sätt	manner	nn
+sätt	place#put#set#plant#compose#set	vb
+sätt	way	nn
+så	if so#in that case	pn
+så	so	kn
+så	so#thus	ab
+så	sow	vb
+sådant	such	pn
+såsom	as	ab
+tack	thanks	nn
+tar	take#bring#grab#touch	vb
+teknikerna	engineer#technician	nn
+tekniska	[technically] adept	jj
+tekniska	technical
+till	another#more	ab
+till	into#until#to	pp
+till	of#for#as#to	pp
+tillgängliga	available#accessible	jj
+tillgång	access	nn
+tillgång	supply#asset	nn
+tillämpningen	application	nn
+tjänster	job#post#service#duty#favour	nn
+tonvikten	stress	nn
+tredje	third	rg
+två	two	rg
+två	wash	vb
+tydliga	clear#legible	jj
+tydligt	clear#legible	jj
+tydligt	clearly
+typ	type	nn
+täten	head	nn
+undantag	exception	nn
+undantag	exempt#except	vb
+under	beneath#below#during#under#in	pp
+under	wonder	nn
+unionen	union	nn
+unionens	union	nn
+upp	open	ab
+upp	up	ab
+utan		ab
+utan	but	kn
+utan	without	pp
+utanför	outside	ab
+utanför	outside	pp
+utbildning	education	nn
+utforma	design	vb
+utlandsbaserade	foreign-based
+utnyttja	make use of	vb
+utvecklas	grow#develop	vb
+utveckling	development#trend	nn
+vad	appeal#bet	nn
+vad	how	ab
+vad	what	pn
+vara	am#are#is#be#last	vb
+vara	goods#commodity	nn
+varor	goods#commodity	nn
+vart	every	pn
+vart	was	vb
+vart	where	ab
+vart	where	nn
+vetenskapliga	scientific	jj
+verktyg	tool	nn
+vi	we	pn
+via	via	pp
+vid	at	pp
+vid	at#about	pp
+vid	to	pp
+vid	wide	jj
+vilja	want	vb
+vilja	will	nn
+vilket	what#which#who	pn
+vill	want	vb
+viss	certain	jj
+visst	certain	jj
+visst	certainly#probably	ab
+värld	world	nn
+världsomspännande	global	nn
+växa	grow	vb
+vår	our	pn
+vår	spring	nn
+yrkesutbildning	training
+än	than	kn
+än	yet#still#ever	ab
+ändringsförslag	amendment proposal	nn
+är	am#are#is	vb
+år	year	nn
+året	year	nn
+åtgärder	measure	nn
+även	too#even#also	ab
+önskemål	desire#wish	nn
+önskemålen	desire#wish	nn
+över	about#over#across#by way of#above	pp
+över	over#more than#over#past	ab
+överensstämmer	consistent	jj
+överhuvudtaget	on the whole#At all	ab
