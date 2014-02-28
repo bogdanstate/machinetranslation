@@ -80,6 +80,7 @@ efter	for	pp
 eftersom	as#because#seeing that#since	kn
 egna	odd#peculiar#strange#queer	jj
 egna	own	jj
+e-handla	engage in e-commerce	vb
 e-handel	E-Commerce	nn
 e-handeln	E-Commerce	nn
 e-handelns	E-Commerce	nn
