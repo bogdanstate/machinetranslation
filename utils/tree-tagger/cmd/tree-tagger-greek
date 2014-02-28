@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# Set these paths appropriately
+
+BIN=/Users/youyuan/Documents/Courses/cs124/pa/pa6-mt/translate/util/tree-tagger/bin
+CMD=/Users/youyuan/Documents/Courses/cs124/pa/pa6-mt/translate/util/tree-tagger/cmd
+LIB=/Users/youyuan/Documents/Courses/cs124/pa/pa6-mt/translate/util/tree-tagger/lib
+
+OPTIONS="-token -lemma -sgml"
+
+TOKENIZER=${CMD}/tokenize.pl
+MWL=${CMD}/mwl-lookup-greek.perl
+TAGGER=${BIN}/tree-tagger
+PARFILE=${LIB}/greek.par
+
+$TOKENIZER $* |
+# recognition of MWLs
+$MWL |
+# tagging
+$TAGGER $OPTIONS $PARFILE
+

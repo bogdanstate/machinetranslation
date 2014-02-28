@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Set these paths appropriately
+
+BIN=/Users/youyuan/Documents/Courses/cs124/pa/pa6-mt/translate/util/tree-tagger/bin
+CMD=/Users/youyuan/Documents/Courses/cs124/pa/pa6-mt/translate/util/tree-tagger/cmd
+LIB=/Users/youyuan/Documents/Courses/cs124/pa/pa6-mt/translate/util/tree-tagger/lib
+
+OPTIONS="-token -lemma -sgml"
+
+TAGGER=${BIN}/tree-tagger
+TOKENIZER=${CMD}/utf8-tokenize.perl
+PARFILE=${LIB}/slovak-utf8.par
+
+$TOKENIZER $* |
+$TAGGER $OPTIONS $PARFILE
