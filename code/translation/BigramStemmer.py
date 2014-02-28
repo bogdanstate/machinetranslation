@@ -7,9 +7,15 @@ stemmer = PorterStemmer()
 counter = collections.defaultdict(collections.Counter)
 
 lines = open("../../dictionaries/corpora_dict.txt").readlines()
-stems = [l.split('\t')[1].replace('\n','').replace(' ','#').split('#') for l in lines]
-stems = sum(stems, []) 
-stems = [stemmer.stem(s) for s in stems]
+words = [l.split('\t')[1].replace('\n','').replace(' ','#').split('#') for l in lines]
+words = sum(words, []) 
+stems = [stemmer.stem(s) for s in words]
+ws = dict(zip(words, stems))
+
+stem_dict_file = open('../../dictionaries/stem_dict.pkl', 'wb')
+pickle.dump(ws, stem_dict_file)
+stem_dict_file.close()
+
 
 for line in sys.stdin:
   line = line.strip().replace(","," ").replace('.'," ").split(' ')
