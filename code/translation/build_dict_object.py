@@ -10,9 +10,9 @@ eng_swe_dict =  collections.defaultdict(list)
 
 for line in open(DICT_FILE,'r').readlines():
   try: 
-    [swe, eng_words, pos] = line.split('\t',2)
+    [swe, eng_words, pos] = line.strip().split('\t',2)
   except:
-    [swe, eng_words] = line.split('\t',1)
+    [swe, eng_words] = line.strip().split('\t',1)
   eng_words = eng_words.split('#')
   if pos:
     swe_eng_dict[(swe, pos)] += eng_words
