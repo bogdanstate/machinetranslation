@@ -425,3 +425,8 @@ yrkesutbildning	training
 över	over#more than#over#past	ab
 överensstämmer	consistent	jj
 överhuvudtaget	on the whole#At all	ab
+Cederschiöld	Cederschiöld	np
+e-initiativet	the e-initiative nn
+vare	to#after#whether#neither#either	cc
+utbildnings-	education-	ad
+-	-
