@@ -32,9 +32,8 @@ class Translator:
             return None
           return [first[0], first[1], second[1]]
         def merge_all_ngrams(self, prior, ngrams):
-          print prior
           if len(ngrams) == 0:
-            return prior
+            return [tuple()]
           all_merges = []
           current = ngrams[0]
           remainder = ngrams[1:]
@@ -43,8 +42,9 @@ class Translator:
           merges = [x for x in merges if x != None]
           merges = list(set(map(tuple, merges)))
           for penult, prev, current in merges:
-            all_merges += self.merge_all_ngrams(prior + tuple([current]), remainder)
+            all_merges = [tuple([current]) + term for term in self.merge_all_ngrams(prior + tuple([current]), remainder)]
           return all_merges
+          
 
 	def generate_proposals(self, wordpos, lang_dict):
 		"""
@@ -55,13 +55,13 @@ class Translator:
 		all_bigrams = []
 		for first_trans, next_trans in zip(proposed[:-1], proposed[1:]):
 			bigrams = list(itertools.product(first_trans, next_trans))
-			oracles_bigrams = o.show_me_the_path(bigrams, 3)
+			oracles_bigrams = o.show_me_the_path(bigrams, 5)
 			if len(oracles_bigrams) == 0:
 			    oracles_bigrams = bigrams
 			all_bigrams += [oracles_bigrams]
                 if len(all_bigrams) > 1:
-                  all_bigrams = sum([self.merge_all_ngrams(prev, all_bigrams[1:]) for prev in all_bigrams[0]], [])
-                  print all_bigrams
+                  all_bigrams = [self.merge_all_ngrams(prev, all_bigrams[1:]) for prev in all_bigrams[0]]
+                print all_bigrams
        
 
 	def translateCorpora(self, fconll):
