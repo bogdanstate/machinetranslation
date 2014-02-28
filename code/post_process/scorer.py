@@ -69,7 +69,7 @@ if __name__ == "__main__":
 
     cand_file_paths = get_file_paths(cand_dir)
 
-    cum_trans_out = open(output_dir+"/translation_all.txt", "wb")
+    cum_trans_out = open(output_dir+"/output_final.txt", "wb")
     results = []
     for i in range(0, len(cand_file_paths)):
         #if os.path.exists(output_dir+"/translation"+str(i+1)+".txt"):
