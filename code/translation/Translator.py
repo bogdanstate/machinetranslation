@@ -60,7 +60,7 @@ class Translator:
 			    oracles_bigrams = bigrams
 			all_bigrams += [oracles_bigrams]
                 if len(all_bigrams) > 1:
-                  all_bigrams = [self.merge_all_ngrams(prev, all_bigrams[1:]) for prev in all_bigrams[0]]
+                  all_bigrams = [[prev + term for term in self.merge_all_ngrams(prev, all_bigrams[1:])] for prev in all_bigrams[0]]
                 return sum([x for x in all_bigrams if x != []], [])
        
 
@@ -69,7 +69,6 @@ class Translator:
 		s = list(csv.reader(open(fconll, 'rb'), delimiter='\t'))
 		sents = ss.split_sentence(s)
 		i = 0
-		
 		for sent in sents:
 			i += 1
 			out = codecs.open('../../test_input/dev_set_trans_' + str(i), 'w')
