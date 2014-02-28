@@ -20,16 +20,21 @@ class SentenceSplitter:
         words = []
         tags = []
         order = []
+        feat = []
+        lemmas = []
         while line < len(f) and f[line] and f[line][0] != u'':
+            print f[line]
             match = re.match(SPLIT_REGEX,f[line][2])
             if match:
-                words.append(f[line][2])
+                words.append(f[line][1])
+                lemmas.append(f[line][2])
                 tags.append(f[line][3])
+                feat.append(f[line][5].split('|'))
                 order.append('%s')
                 if f[line][3] not in SWE_POS_TAGS:
                     SWE_POS_TAGS.append(f[line][3])
             line += 1
-        split.append((words,tags,order))
+        split.append((words,lemmas,tags,order,feat))
         line += 1
     return split
 
@@ -44,15 +49,20 @@ class SentenceSplitter:
         words = []
         tags = []
         order = []
-        while f[line] != ['<EOL>']:
+        lemmas = []
+        while f[line] != ['<EOL>'] and f[line][0].replace("\t","") != "":
             if re.match(SPLIT_ENG_REGEX,f[line][2]):
-                words.append(f[line][2])
+                words.append(f[line][0])
+                if f[line][0]!="<unknown>":
+                  lemmas.append(f[line][2])
+                else:
+                  lemmas.append(f[line][0])
                 tags.append(f[line][1])
                 order.append('%s')
                 if f[line][1] not in ENG_POS_TAGS:
                     ENG_POS_TAGS.append(f[line][1])
             line += 1
-        split.append((words,tags,order))
+        split.append((words,lemmas,tags,order))
         line += 1
     return split
     #sentence = re.sub("(?<=[^A-Za-z])the |^the ","the_", sentence.lower())

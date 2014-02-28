@@ -37,7 +37,7 @@ class StochasticDictionary:
     else:
       self.d[swe_tag] = {}
       self.d[swe_tag][eng_tag] = log_prob
-
+  
   def get_translations( self, swe_lemma, swe_pos ):
     """
     Return translation of a certain Swedish Lemma,
@@ -55,7 +55,7 @@ class StochasticDictionary:
     if swe_tag not in self.d:
       return []
     translations = [(k[0], k[1], v) for k, v in self.d[(swe_lemma, swe_pos)].iteritems()]
-    return translations
+    return translations 
 
   def build_from_dict_file(self, dict_file):
     """
