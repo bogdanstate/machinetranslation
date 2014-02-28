@@ -40,12 +40,6 @@ class SentenceSplitter:
             #     break;
             line += 1
 
-        words.append("##")
-        lemmas.append("##")
-        tags.append("##")
-        feat.append("##")
-        order.append('%s')
-        
         group = (words,lemmas,tags,order,feat)
         split.append(rh.process(group))
         #split.append(group)
