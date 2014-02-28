@@ -1,18 +1,26 @@
 import pickle
-from StochasticDictionary import StochasticDictionary
+import collections
 
 DICT_FILE = "../../dictionaries/corpora_dict.txt"
 
 swe_dict_file = open('../../dictionaries/dictionary.pkl', 'wb')
-d = StochasticDictionary()
-d.build_from_dict_file(DICT_FILE)
-pickle.dump(d, swe_dict_file)
+
+swe_eng_dict =  collections.defaultdict(list) 
+eng_swe_dict =  collections.defaultdict(list) 
+
+for line in open(DICT_FILE,'r').readlines():
+  try: 
+    [swe, eng_words, pos] = line.split('\t',2)
+  except:
+    [swe, eng_words] = line.split('\t',1)
+  eng_words = eng_words.split('#')
+  if pos:
+    swe_eng_dict[(swe, pos)] += eng_words
+  swe_eng_dict[(swe, "")] += eng_words
+
+pickle.dump(swe_eng_dict, swe_dict_file)
 swe_dict_file.close()
 
-#swe_eng_dict =  collections.defaultdict(empty_defaultdict) 
-#eng_swe_dict =  collections.defaultdict(empty_defaultdict) 
-
-#pickle.dump(eng_swe_dict, eng_dict_file)
 #eng_dict_file = open('../../dictionaries/rev_dictionary.pkl', 'wb')
 
 #eng_dict_file.close()

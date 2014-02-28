@@ -42,8 +42,12 @@ class NodeBoxMorphs:
 	def getSingular(self,noun):
 		return self.nn.singular(noun)
 
+
 if __name__ == "__main__":
 	nbm = NodeBoxMorphs()
-	print nbm.getVerbForms('run')
+	print nbm.getPastForms('run')
 	print nbm.getSingular('children')
+
+
+
 
