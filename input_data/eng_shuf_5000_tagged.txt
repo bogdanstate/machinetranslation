@@ -3278,7 +3278,7 @@ Belgium	NP	Belgium
 under	IN	under
 the	DT	the
 title	NN	title
-"	``	"
+"		"
 Sex	NN	sex
 colleague	NN	colleague
 ,	,	,
@@ -28288,7 +28288,7 @@ regulations	NNS	regulation
 aimed	VBN	aim
 at	IN	at
 the	DT	the
-"	``	"
+"		"
 communitisation	NN	<unknown>
 "	''	"
 of	IN	of
@@ -38300,7 +38300,7 @@ accusing	VBG	accuse
 me	PP	me
 of	IN	of
 having	VBG	have
-"	``	"
+"		"
 crazy	JJ	crazy
 ideas	NNS	idea
 "	''	"
@@ -39439,7 +39439,7 @@ which	WDT	which
 is	VBZ	be
 to	TO	to
 ,	,	,
-"	``	"
+"		"
 define	VB	define
 a	DT	a
 terrorist	JJ	terrorist
@@ -64407,7 +64407,7 @@ immediately	RB	immediately
 after	IN	after
 the	DT	the
 word	NN	word
-"	``	"
+"		"
 Commission	NP	Commission
 "	''	"
 .	SENT	.
@@ -69688,7 +69688,7 @@ under	IN	under
 the	DT	the
 wonderful	JJ	wonderful
 heading	NN	heading
-"	``	"
+"		"
 Brussels	NP	Brussels
 demands	VBZ	demand
 labour	NN	labour
@@ -72288,7 +72288,7 @@ can	MD	can
 they	PP	they
 say	VB	say
 ,	,	,
-"	``	"
+"		"
 Do	VB	do
 what	WP	what
 I	PP	I
@@ -84829,7 +84829,7 @@ system	NN	system
 legal	JJ	legal
 system	NN	system
 called	VBN	call
-"	``	"
+"		"
 justice	NN	justice
 delayed	VBN	delay
 is	VBZ	be
@@ -87712,7 +87712,7 @@ communication	NN	communication
 from	IN	from
 the	DT	the
 Commission	NP	Commission
-"	``	"
+"		"
 Towards	NP	<unknown>
 a	DT	a
 single	JJ	single
@@ -106157,7 +106157,7 @@ she	PP	she
 rejects	VBZ	reject
 the	DT	the
 word	NN	word
-"	``	"
+"		"
 broadly	RB	broadly
 "	''	"
 and	CC	and
@@ -106171,7 +106171,7 @@ actually	RB	actually
 agree	VB	agree
 to	TO	to
 remain	VB	remain
-"	``	"
+"		"
 exactly	RB	exactly
 "	''	"
 within	IN	within
@@ -112889,7 +112889,7 @@ together	RB	together
 he	PP	he
 asked	VBD	ask
 :	:	:
-"	``	"
+"		"
 But	CC	but
 why	WRB	why
 is	VBZ	be
@@ -113405,7 +113405,7 @@ factor	NN	factor
 in	IN	in
 my	PP$	my
 voting	JJ	voting
-"	``	"
+"		"
 no	UH	no
 "	''	"
 .	SENT	.
@@ -113622,7 +113622,7 @@ transport	NN	transport
 <EOL>
 The	DT	the
 word	NN	word
-"	``	"
+"		"
 bio	NP	bio
 '	''	'
 is	VBZ	be
@@ -113632,7 +113632,7 @@ word	NN	word
 and	CC	and
 the	DT	the
 word	NN	word
-"	``	"
+"		"
 techno	NN	<unknown>
 '	''	'
 reminds	VBZ	remind
@@ -120454,7 +120454,7 @@ Petersen	NP	Petersen
 ,	,	,
 this	DT	this
 is	VBZ	be
-"	``	"
+"		"
 a	DT	a
 blast	NN	blast
 from	IN	from
@@ -130051,7 +130051,7 @@ is	VBZ	be
 a	DT	a
 Turkey	NP	Turkey
 whose	WP$	whose
-"	``	"
+"		"
 European	JJ	European
 vocation	NN	vocation
 '	''	'
@@ -138015,7 +138015,7 @@ I	PP	I
 quote	VBP	quote
 again	RB	again
 :	:	:
-"	``	"
+"		"
 It	PP	it
 could	MD	could
 be	VB	be
