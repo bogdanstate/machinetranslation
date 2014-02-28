@@ -7,6 +7,8 @@ ALPHA_CHARS = "[a-zåäöïëéáóúí_-]+"
 SPLIT_REGEX = re.compile(ALPHA_CHARS, re.IGNORECASE|re.UNICODE)
 SPLIT_ENG_REGEX = re.compile("[a-z_-]+", re.IGNORECASE)
 rh = ReorderHandler()
+# SWE_POS_TAGS = []
+# ENG_POS_TAGS = []
 
 class SentenceSplitter:
   def isDelimiter(self, entry):
@@ -28,8 +30,7 @@ class SentenceSplitter:
         feat = []
         lemmas = []
         while line < len(f) and f[line] and f[line][0]!='':
-            # match = re.match(SPLIT_REGEX,f[line][2])
-            # if match:
+
             words.append(f[line][1])
             lemmas.append(f[line][2])
             tags.append(f[line][3])
@@ -86,4 +87,6 @@ if __name__ == "__main__":
     # esplit = ss.split_english_sentence(e)
     # print esplit[-1]
 
+    # print SWE_POS_TAGS
+    # print ENG_POS_TAGS
 
