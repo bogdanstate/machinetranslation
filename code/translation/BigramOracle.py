@@ -17,9 +17,9 @@ class BigramOracle:
       first_stem = self.stem_dict[first.lower().split(' ')[-1]]
       second_stem = self.stem_dict[second.lower().split(' ')[0]]
       c[(first, second)] = self.d[first_stem][second_stem]
-    return [x for x in c.most_common(num_desired) if x[1] > 0]
+    return [x[0] for x in c.most_common(num_desired) if x[1] > 0]
 
 if __name__ == "__main__":
   o = BigramOracle("../../dictionaries/bigrams.pkl","../../dictionaries/stem_dict.pkl")
-  candidates = [("blerjrhka such","that fdkajfld"), ("as", "if")]
+  candidates = [("blerjrhka such","that fdkajfld"), ("as", "if"), ("into","wife")]
   print o.show_me_the_path(candidates, 3)
