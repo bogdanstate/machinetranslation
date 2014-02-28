@@ -27,6 +27,25 @@ class Translator:
 			return lang_dict[(word,'')]
 		return [word]
 
+        def merge_bigrams(self, first, second):
+          if first[1] != second[0]:
+            return None
+          return [first[0], first[1], second[1]]
+        def merge_all_ngrams(self, prior, ngrams):
+          if len(ngrams) == 0:
+            return [tuple()]
+          all_merges = []
+          current = ngrams[0]
+          remainder = ngrams[1:]
+          prev_bigram = (prior[-2], prior[-1])
+          merges = [self.merge_bigrams(prev_bigram, current_bigram) for current_bigram in current]
+          merges = [x for x in merges if x != None]
+          merges = list(set(map(tuple, merges)))
+          for penult, prev, current in merges:
+            all_merges = [tuple([current]) + term for term in self.merge_all_ngrams(prior + tuple([current]), remainder)]
+          return all_merges
+          
+
 	def generate_proposals(self, wordpos, lang_dict):
 		"""
 		Generates all proposals for the set of words provided, 
@@ -36,11 +55,14 @@ class Translator:
 		all_bigrams = []
 		for first_trans, next_trans in zip(proposed[:-1], proposed[1:]):
 			bigrams = list(itertools.product(first_trans, next_trans))
-			print bigrams
-			oracles_bigrams = o.show_me_the_path(bigrams, 1)
+			oracles_bigrams = o.show_me_the_path(bigrams, 5)
 			if len(oracles_bigrams) == 0:
 			    oracles_bigrams = bigrams
-			all_bigrams += oracles_bigrams
+			all_bigrams += [oracles_bigrams]
+                if len(all_bigrams) > 1:
+                  all_bigrams = [self.merge_all_ngrams(prev, all_bigrams[1:]) for prev in all_bigrams[0]]
+                print all_bigrams
+       
 
 	def translateCorpora(self, fconll):
 		ss = SentenceSplitter()

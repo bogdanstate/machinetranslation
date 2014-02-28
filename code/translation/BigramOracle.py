@@ -21,5 +21,5 @@ class BigramOracle:
 
 if __name__ == "__main__":
   o = BigramOracle("../../dictionaries/bigrams.pkl","../../dictionaries/stem_dict.pkl")
-  candidates = [("blerjrhka such","that fdkajfld"), ("as", "if"), ("into","wife")]
+  candidates = [("blerjrhka such","that fdkajfld"), ("as", "if"), ("into","wife"), ("year","at"), ("year", "in")]
   print o.show_me_the_path(candidates, 3)

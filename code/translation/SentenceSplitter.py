@@ -40,7 +40,7 @@ class SentenceSplitter:
                 # if f[line][3] not in SWE_POS_TAGS:
                 #     SWE_POS_TAGS.append(f[line][3])
             line += 1
-        split.append((words,lemmas,tags,' '.join(order),feat))
+        split.append((words,lemmas,tags,order,feat))
         line += 1
     return split
 
@@ -78,7 +78,7 @@ if __name__ == "__main__":
     sweconll = '../../input_data/dev_set_sv.conll'
     s = list(csv.reader(open(sweconll, 'rb'), delimiter='\t'))
     ssplit = ss.split_sentence(s)
-    print ssplit[0:3]
+    print ssplit[0]
 
     # engTreeTagged = '../../input_data/dev_set_en_tagged.txt'
     # e = list(csv.reader(open(engTreeTagged, 'rb'), delimiter='\t'))
