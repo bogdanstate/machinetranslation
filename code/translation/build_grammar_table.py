@@ -6,6 +6,7 @@ from collections import Counter
 from collections import defaultdict
 lookup = defaultdict(Counter)
 
+data = []
 from SentenceSplitter import SentenceSplitter
 from StochasticDictionary import StochasticDictionary
 
@@ -23,21 +24,21 @@ sweconll = '../../input_data/swe_shuf_5000.conll'
 char_stream = codecs.getreader("utf-8")(open(sweconll, 'rb'))
 s = [x.replace('\n','').split('\t') for x in char_stream.readlines()]
 ssplit = ss.split_sentence(s)
-print d
 
 for sent in zip(ssplit, esplit):
   ssent = sent[0]
   esent = sent[1]
-  for (word, lemma, tag, feat) in zip(ssent[0], ssent[1], ssent[2], ssent[4]):
-    trans = d[(lemma,tag)]
-    print trans
+  for (word, lemma, swe_tag, feat) in zip(ssent[0], ssent[1], ssent[2], ssent[4]):
+    trans = d[(lemma,swe_tag.lower())]
     #trans = [x[0] for x in trans if len(x[0].split(" ")) == 1]
-    eng_changes = [en_word.lower().replace(en_lemma.lower(), "%s") 
-                     for en_lemma, en_word in zip(esent[0], esent[1]) if en_lemma in trans]
-    for change in eng_changes:
-      lookup["|".join(feat)][change] += 1
+    eng_tags = [en_tag for en_lemma, en_word, en_tag in zip(esent[0], esent[1], esent[2]) if en_lemma in trans]
+    
+    for eng_tag in eng_tags:
+      lookup["|".join([swe_tag]+feat)][eng_tag] += 1
+      data += [[eng_tag] + [swe_tag] + ["|".join(feat)]]
 
-print lookup
+for line in data:
+  print ",".join(line)
 
 pos = {}
 for swe_tag, v in lookup.iteritems():
