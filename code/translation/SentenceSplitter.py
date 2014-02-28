@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 import re
 import csv
+from ReorderHandler import ReorderHandler
 
 ALPHA_CHARS = "[a-zåäöïëéáóúí_-]+"
 SPLIT_REGEX = re.compile(ALPHA_CHARS, re.IGNORECASE|re.UNICODE)
 SPLIT_ENG_REGEX = re.compile("[a-z_-]+", re.IGNORECASE)
+rh = ReorderHandler()
 # SWE_POS_TAGS = []
 # ENG_POS_TAGS = []
 
@@ -40,7 +42,9 @@ class SentenceSplitter:
                 # if f[line][3] not in SWE_POS_TAGS:
                 #     SWE_POS_TAGS.append(f[line][3])
             line += 1
-        split.append((words,lemmas,tags,order,feat))
+
+        group = (words,lemmas,tags,order,feat)
+        split.append(rh.process(group))
         line += 1
     return split
 
