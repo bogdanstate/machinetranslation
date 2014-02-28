@@ -5,6 +5,7 @@ class NodeBoxMorphs:
 		self.vb = en.verb
 		self.nn = en.noun
 	
+	"""Get morphs of a verb"""
 	def getPresentForms(self,verb):
 		forms = []
 		for p in [1,2,3]:
@@ -34,6 +35,7 @@ class NodeBoxMorphs:
 		papf = self.getPastParticipleForms(verb)
 		return list(set(prf + prpf + paf + papf))
 
+	"""Get morphs of a noun"""
 	def getPlural(self,noun):
 		return self.nn.plural(noun)
 
