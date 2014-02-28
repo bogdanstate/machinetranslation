@@ -42,11 +42,11 @@ class Translator:
           merges = [x for x in merges if x != None]
           merges = list(set(map(tuple, merges)))
           for penult, prev, current in merges:
-            all_merges = [tuple([current]) + term for term in self.merge_all_ngrams(prior + tuple([current]), remainder)]
+            all_merges += [tuple([current]) + term for term in self.merge_all_ngrams(prior + tuple([current]), remainder)]
           return all_merges
           
 
-	def generate_proposals(self, wordpos, lang_dict):
+	def generate_proposals(self, wordpos, lang_dict, k):
 		"""
 		Generates all proposals for the set of words provided, 
 		based on information contained in lang_dict.
@@ -55,13 +55,13 @@ class Translator:
 		all_bigrams = []
 		for first_trans, next_trans in zip(proposed[:-1], proposed[1:]):
 			bigrams = list(itertools.product(first_trans, next_trans))
-			oracles_bigrams = o.show_me_the_path(bigrams, 5)
+			oracles_bigrams = o.show_me_the_path(bigrams, k)
 			if len(oracles_bigrams) == 0:
 			    oracles_bigrams = bigrams
 			all_bigrams += [oracles_bigrams]
                 if len(all_bigrams) > 1:
                   all_bigrams = [self.merge_all_ngrams(prev, all_bigrams[1:]) for prev in all_bigrams[0]]
-                print all_bigrams
+                return sum([x for x in all_bigrams if x != []], [])
        
 
 	def translateCorpora(self, fconll):
@@ -73,7 +73,12 @@ class Translator:
 		for sent in sents:
 			i += 1
 			out = codecs.open('../../output_data/dev_set_trans_' + str(i), 'w')
-			proposals = self.generate_proposals(zip(sent[0],sent[2]), lang_dict)
+			k = 0
+                        proposals = []
+                        while (len(proposals) <= 2 and k <= 6):
+                          k += 1
+                          proposals = self.generate_proposals(zip(sent[0],sent[2]), lang_dict, k)
+                        print(proposals)
 			# for item in proposals:
 			# 	st = sent[3] % item
 			# 	out.write(st)
