@@ -71,15 +71,15 @@ class Translator:
 		i = 0
 		for sent in sents:
 			i += 1
-			out = codecs.open('../../test_input/dev_set_trans_' + str(i), 'w')
+			out = codecs.open('../../translation_candidates/dev_set_trans_' + str(i), 'w')
 			k = 0
                         proposals = []
                         while (len(proposals) <= 2 and k <= 6):
                           k += 1
                           proposals = self.generate_proposals(zip(sent[0],sent[2]), lang_dict, k)
                         for proposal in set([" ".join(x) for x in proposals]):
-                          print proposal + '\n'
-                          out.write(proposal+'\n')
+                          #print self.formatSent(proposal) + '\n'
+                          out.write(self.formatSent(proposal)+'\n')
 			# for item in proposals:
 			# 	st = sent[3] % item
 			# 	out.write(st)
@@ -94,8 +94,7 @@ class Translator:
 	# 		if oracle_dict[(a, b) == 0:
 	# 			print a, b
 	# 			return False
-	def formatSent(self, slist):
-		sent = " ".join(slist)
+	def formatSent(self, sent):
 		sent = sent[:1].upper() + sent[1:]
 		sent = sent.replace(' ,',',')
 		sent = sent.replace(' .','.')
