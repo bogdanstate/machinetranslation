@@ -70,13 +70,27 @@ if __name__ == "__main__":
     cand_file_paths = get_file_paths(cand_dir)
 
     cum_trans_out = open(output_dir+"/translation_all.txt", "wb")
+    results = []
     for i in range(0, len(cand_file_paths)):
         #if os.path.exists(output_dir+"/translation"+str(i+1)+".txt"):
             #os.remove(output_dir+"/translation"+str(i+1)+".txt")
-        indexes = [int(s) for s in cand_file_paths[i].split('_') if s.isdigit()]
-        translation_out = open(output_dir+"/translation"+str(indexes[0])+".txt", "wb")
+        index = [s for s in cand_file_paths[i].split('_') if s.isdigit()][0]
+        if len(index) < 2:
+	    index = "0"+index
+	#translation_out = open(output_dir+"/translation"+index+".txt", "wb")
         best_sent = get_best_sent(cand_file_paths[i], unigram_count, bigram_count)
-        translation_out.write(best_sent + "\n")
-        cum_trans_out.write(str(indexes[0])+": "+best_sent + "\n")
-        translation_out.close()
+        #translation_out.write(best_sent + "\n") 
+        results.append((output_dir+"/translation"+index+".txt", best_sent))
+        #translation_out.close()
+
+    merged = ""
+    results.sort(key=lambda tup: tup[0])
+    for tup in results:
+	line = tup[1]
+	if len(tup[1]) > 0 and tup[1][len(tup[1])-1] == '\n':
+	    line = tup[1][:len(tup[1])-1] + " "
+	cum_trans_out.write(line)
+	merged += line
     cum_trans_out.close()
+
+    print >> sys.stdout, merged
