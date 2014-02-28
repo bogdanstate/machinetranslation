@@ -95,17 +95,17 @@ class Translator:
 	# 		if oracle_dict[(a, b) == 0:
 	# 			print a, b
 	# 			return False
-  def formatSent(self, slist):
-    sent = " ".join(slist)
-    sent = sent[:1].upper() + sent[1:]
-    sent = sent.replace(' ,',',')
-    sent = sent.replace(' .','.')
-    sent = sent.replace(' !','!')
-    sent = sent.replace(' :',':')
-    sent = sent.replace(' /','/')
-    sent = sent.replace('( ','(')
-    sent = sent.replace(' )',')')
-    return sent
-    
+	def formatSent(self, slist):
+		sent = " ".join(slist)
+		sent = sent[:1].upper() + sent[1:]
+		sent = sent.replace(' ,',',')
+		sent = sent.replace(' .','.')
+		sent = sent.replace(' !','!')
+		sent = sent.replace(' :',':')
+		sent = sent.replace(' /','/')
+		sent = sent.replace('( ','(')
+		sent = sent.replace(' )',')')
+		return sent
+
 trans = Translator()
 trans.translateCorpora('../../input_data/dev_set_sv.conll')
