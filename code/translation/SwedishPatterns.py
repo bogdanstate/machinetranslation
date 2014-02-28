@@ -17,22 +17,7 @@ patterns = [
             split['translation'][i-1] = "a"            
     return split
   
-  lambda negate:
-    # negate is (words,lemmas,tags,orderString,feats)
-    # If negate words contain "inte":
-    # if it follows a verb not equal to "vara" && "ha":
-    #   exchange the position of "inte" and verb
-    # return
-    idx = len(negate[1]) - 1
-    for i in reversed(range(1,len(negate[1]))):
-      if negate[1][i].lower() == 'inte':
-        if negate[1][i-1] == 'vara' or negate[1][i-1] == 'ha':
-          continue
-        if negate[2][i-1] == 'VB':
-          for t in xrange(len(negate)):
-            negate[t][i], negate[t][i-1] = negate[t][i-1], negate[t][i]
-    return negate
 ]
 
 for fn in patterns:
-  split = fn(split)
+  sent = fn(sent)
