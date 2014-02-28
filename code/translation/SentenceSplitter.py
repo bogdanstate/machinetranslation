@@ -23,7 +23,6 @@ class SentenceSplitter:
         feat = []
         lemmas = []
         while line < len(f) and f[line] and f[line][0] != u'':
-            print f[line]
             match = re.match(SPLIT_REGEX,f[line][2])
             if match:
                 words.append(f[line][1])
