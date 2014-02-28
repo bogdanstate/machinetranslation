@@ -78,7 +78,8 @@ class Translator:
                         while (len(proposals) <= 2 and k <= 6):
                           k += 1
                           proposals = self.generate_proposals(zip(sent[0],sent[2]), lang_dict, k)
-                        print(proposals)
+                        for proposal in set([" ".join(x) for x in proposals]):
+                          print proposal
 			# for item in proposals:
 			# 	st = sent[3] % item
 			# 	out.write(st)
