@@ -31,8 +31,8 @@ balans	balance	nn
 bara	if	kn
 bara	merely#only#just	ab
 bara	naked#bare	jj
-befolkningen	people#population#the inhabitants	nn
-begränsning	bounds#restriction#scope#limitation	nn
+befolkningen	people#population	nn
+begränsning	bounds#restriction#limitation	nn
 behöver	have to#need to	vb
 behöver	want#need#require	vb
 berättigade	authorize#entitle	vb
@@ -85,7 +85,7 @@ e-handeln	E-Commerce	nn
 e-handelns	E-Commerce	nn
 e-handelsdirektivet	E-Commerce Directive	nn
 e-handelsmarknad	E-Commerce Market	nn
-e-handelsmöjligheterna E-Commerce Opportunities	nn
+e-handelsmöjligheterna	E-Commerce Opportunities	nn
 einitiativet	e-initiative
 ekonomin	economy	nn
 elektronisk	electronic	jj
