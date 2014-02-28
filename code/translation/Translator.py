@@ -79,8 +79,7 @@ class Translator:
                           k += 1
                           proposals = self.generate_proposals(zip(sent[0],sent[2]), lang_dict, k)
                         for proposal in set([" ".join(x) for x in proposals]):
-                          if i == 33:
-                          	print proposal + '\n'
+                          print proposal + '\n'
                           out.write(proposal+'\n')
 			# for item in proposals:
 			# 	st = sent[3] % item

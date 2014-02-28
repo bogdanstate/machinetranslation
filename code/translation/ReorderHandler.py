@@ -9,7 +9,7 @@ class ReorderHandler:
 		# return
 		idx = len(sentObj[1]) - 1
 		for i in reversed(range(1,len(sentObj[1]))):
-			if sentObj[1][i].lower() == 'inte':
+			if sentObj[1][i].lower() == 'inte' or sentObj[1][i].lower() == 'ej':
 				if sentObj[1][i-1] == 'vara' or sentObj[1][i-1] == 'ha':
 					continue
 				if sentObj[2][i-1] == 'VB':
