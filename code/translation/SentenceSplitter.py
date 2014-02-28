@@ -23,7 +23,6 @@ class SentenceSplitter:
         feat = []
         lemmas = []
         while line < len(f) and f[line] and f[line][0] != u'':
-            print f[line]
             match = re.match(SPLIT_REGEX,f[line][2])
             if match:
                 words.append(f[line][1])
@@ -34,7 +33,7 @@ class SentenceSplitter:
                 if f[line][3] not in SWE_POS_TAGS:
                     SWE_POS_TAGS.append(f[line][3])
             line += 1
-        split.append((words,lemmas,tags,order,feat))
+        split.append((words,lemmas,tags,' '.join(order),feat))
         line += 1
     return split
 
